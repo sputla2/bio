@@ -1,0 +1,145 @@
+<!-- emmet package displays boilerplate html code (: doctype, html tags,
+head tag,meta tag, body tag) when type 'html' and enter -->
+
+<!--doctype: specifies version html for browser to render-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- head: tells browser how to deal with the page-->
+
+<head>
+
+  <!-- meta tag: tells browser text encoding of the page is utf-8 which is reccommended
+    and also the description attribute tells the content to display in the search results
+    to tell what site is about look at mdn's search results in google, description-->
+  <meta charset="utf-8">
+
+  <!-- title: content shows as the name of the tab in browser-->
+  <!-- cherry blossom copied from https://unicode-table.com/en/1F338/-->
+  <!-- <title> 🌸me's Personal Site</title>-->
+  <title> me's Personal Site</title>
+</head>
+<!-- body-->
+
+<body>
+
+  <!-- Insert image above my level 1 header name. src = public URL to picture for browser to download picture from their server (if server is down screen shows a blank box with an x) or
+  my picture in the same directory as this file,  alt = the alternative text displayed by browser if it cannot render image, i.e. image description
+  width,height tags adjust width and height of image-->
+  <img src="C:\Users\asput\Desktop\Web Development\HTML - Personal Site\0523201807a_HDR_2.jpg" alt="me's profile image" width="200" height="200">
+  <h1> me </h1>
+  <!-- p indicates the paragraph element below, which displays my title-->
+  <!-- italicize using em which is better that <i></i> tag in html -->
+  <p> <em>A student</em></p>
+
+  <!-- second paragraph separated by space tells my bio-->
+  <!-- to bold text better to use strong instead of b-->
+  <p> I was <strong>born</strong> and raised in .... Growing up, logic and computers had surrounded my life and heightened my interests in topics:...</p>
+  <br>
+  <hr>
+  <!-- level 3 heading: Education to indicate education section-->
+  <h3><strong>Education</strong></h3>
+
+  <!-- bulleted list my education with unordered list, ul tag, documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul-->
+  <ul>
+    <!-- li encapsulates each bullet in the unordered list -->
+    <li>Bachelor of Science in ... School, University, Date Received
+      <!-- nested unordered list listing for bachelor of science-->
+      <ul>
+        <li><em>List technical courses</em></li>
+      </ul>
+    </li>
+    <li>Pursuing Master of Science in ... Date
+      <ul>
+        <li><em>Focused on Database Management, design, architecture, and Software Engineering courses including:</em></li>
+      </ul>
+    </li>
+  </ul>
+
+<hr>
+  <!-- level 3 heading: Hobbies to indicate hobbies section-->
+  <h3><strong>Hobbies</strong></h3>
+
+  <!-- bulleted list my hobbies with ordered list, ol tag, documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol-->
+  <ol>
+    <!-- TODO: link to public picture of me walking. ✅
+    The anchor point sets the 'Solving Puzzles' text as a hyperlink, which references href (=link destination) my public puzzle picture when clicked
+  <li><a href="https://drive.google.com/file/d/1IRr3qi0vuc7-gqJ56idYUF50X_BOmqK4/view?usp=sharing">Solving Puzzles</a></li> -->
+    <li>Solving Puzzles</li>
+    <li>Biking</li>
+    <li>Drawing</li>
+    <li>Playing Flute</li>
+  </ol>
+
+<hr>
+  <h3> Skills:</h3>
+  <!-- Html code for table, cellspacing attribute determines number of pixels or whitespace width between two cells on the same row-->
+  <table cellspacing='10'>
+    <!-- by standard: every table  can has head where you can add titles of columns go in each 'th' cell-->
+    <!--  <thead>
+      <th> Skill : Level of Familiarity</th>
+    </thead> -->
+
+    <!-- every table has body where data goes in rows (tr) as individual cells, td = one cell in the tr row -->
+    <!-- access emoji menu : press windows key and semicolon key -->
+    <tbody>
+      <!-- marker for one row below is tr-->
+      <tr>
+        <!-- in this one row, there are 2 cells: td 1, td 2 below-->
+
+        <!-- td 1 has one table in it-->
+        <td>
+          <table cellspacing='5'>
+            <!-- each row of table in td 1 holds 2 cells of data:-->
+            <tr>
+              <!-- skill is in one cell, level of expertise marked with star emojis is in the adjacent cell in this row-->
+              <td> Skill 1</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td> Skill 2</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td> Skill 3</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- td 2 has one table in it with the same structure, each row of td 2. table holds (skill, level)-->
+        <td>
+          <table cellspacing='5'>
+            <tr>
+              <td> Skill 4</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td> Skill 5</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td> Skill 6</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+    <!-- can add tfoot cells to table to for footer -->
+  </table>
+
+  <hr>
+  <a href="contact.html">Contact Page</a>
+
+  <hr>
+  <p>This site was built according to tutorials 11-27 as part of the curriculum in the MOOC referenced below: </p>
+  <p>
+    Yu, A. (n.d.).<em>The Complete 2021 Web Development Bootcamp</em>. Udemy.
+         <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">https://www.udemy.com/course/the-complete-web-development-bootcamp/</a>
+    </p>
+
+
+
+</body>
+
+</html>
